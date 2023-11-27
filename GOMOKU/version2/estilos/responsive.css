@@ -1,0 +1,110 @@
+#TableroDibuja{
+    width: 30%;
+}
+@media only screen and (min-width: 624px) and (max-width: 1124px){
+    .Pagina_Principal{
+        background-image: url(fondo_Responsive_1.jpg);
+        background-size: 140%;
+    }
+    .Preparando{
+        background-size: 150%;
+    }
+    .clasePartida{
+        background-size: 160%;
+    }
+    #TableroDibuja{
+        width: 40%;
+    }
+   
+}
+@media only screen and (min-width: 425px) and (max-width: 1089px){
+    #Perdedor2{
+        background-size: 160%;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    .Pagina_Principal{
+        background-image: url(fondo_Responsive_3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .Titulo_juego{
+        font-size: 170px;
+    }
+    .Preparando{
+        background-size: 180%;
+    }
+    #TableroDibuja{
+        width: 60%;
+    }
+    .clasePartida{
+        background-image: url(fondo_Responsive_6.jpg);
+        background-size: 260% 160%;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 554px){
+    #TableroDibuja{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 426px){
+    #TableroDibuja{
+        width: 90%;
+    }
+    #Perdedor2{
+        background-size: 160% 560%;
+        font-size: 180%;
+    }
+
+}
+@media only screen and (min-width: 0px) and (max-width: 665px){
+    #Ganador1{
+        background-position: center;
+        background-size: 100% 690%;
+        font-size: 230%;
+    }
+}
+@media only screen and (min-width: 493px) and (max-width: 493px){
+    #Ganador1{
+        background-position: center;
+        background-size: 100% 470%;
+        font-size: 160%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 627px){
+    .Preparando{
+        background-size: 290%;
+        background-image: url(fondo_Responsive_5.jpg);
+    }
+    .Cargando{
+        font-size: 220% auto;
+        color: rgb(81, 80, 59);
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 520px){
+    .Pagina_Principal{
+        background-image: url(fondo_Responsive_4.jpg);
+        background-size: 200%;
+        background-position: center;
+    }
+    .Titulo_juego{
+        font-size: 110px;
+    }
+    .Contenedor_Principal{
+        padding-top: -30px;
+    }
+    .Preparando{
+        background-size: 320%;
+        background-image: url(fondo_Responsive_5.jpg);
+    }
+    .Cargando{
+        font-size: 160%;
+        color: rgb(81, 80, 59);
+    }
+    .clasePartida{
+        background-image: url(fondo_Responsive_7.jpg);
+        background-size: cover;
+    }
+
+}

@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Familia1;
+    src: url("./Fuente1.ttf");
+}
+@font-face {
+    font-family: Familia2;
+    src: url("./Fuente2.ttf");
+}
+.Titulo_juego{
+    color: rgb(237, 221, 77);
+    font-family: Familia2;
+    font-size: 200px;
+}
+*{
+    cursor: url(cursor2.png),pointer;
+}
+/*Pagina Principal*/
+
+.Pagina_Principal{
+    background-image: url(Fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.Contenedor_Principal{
+    text-align: center;
+}
+.Fomulario_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Nombre{
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: rgba(226, 198, 15, 0.603) 1px solid;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(38, 38, 34, 0.858);
+    font-family: Familia1;
+}
+input[id="Jugar"]:enabled{
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 170, 0);
+    color: rgb(1, 1, 1);
+    font-family: Familia1;
+}
+input[id="Jugar"]:disabled{
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(212, 212, 42, 0.526);
+    color: rgb(225, 222, 216);
+    font-family: Familia1;
+}
+input[id="Jugar"]:enabled:hover{
+    cursor: url(cursor1.png),pointer;
+    color: rgb(255, 255, 255)
+}
+#Nombre:hover{
+    cursor: url(cursor1.png),pointer;
+}
+/*Pagina Secundaria*/
+.Preparando{ /*Esto es el Body*/
+    background-image: url(PreparandoJuego.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Cargando{/*Esto son las letras de cargando*/
+    font-family: Familia1;
+    padding-top: 10px;
+    font-size: 40px;
+    padding-right: 30px;
+    text-align: end;
+    color: white;
+}
+/*Pagina del juego*/
+.clasePartida{
+    background-image: url("Fondo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-size: 120%;
+}
+.Jugador_Name{
+    
+        text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+          font-size: 40px;
+    }
+@keyframes textclip {
+    to {
+    background-position: 200% center;
+    }
+}
+.clasePartida>input[type="submit"]{
+    border: none;
+    border-radius: 30px;
+    font-family: Familia1;
+    background-color: #041fef86;
+    letter-spacing: 3px;
+    font-size: 17px;
+    color:white;
+    padding-top: 0;
+}
+.clasePartida>input[type="submit"]:hover{
+    border: none;
+    border: 1px solid #041fef86;
+    color: #041fef86;;
+    background-color: rgba(255, 255, 255, 0.868);
+}
+.FormularioJugando>label{
+    color:white;
+    font-family: Familia1;
+    padding-left: 30px;
+}
+.FormularioJugando>select,option{
+    border: none;
+    border-radius: 30px;
+    font-family: Familia1;
+    text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 24px;
+      color: wheat;
+}
+input[name="Fila"]{
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff74;
+    text-align: center;
+    font-size: 13px;
+}
+input[name="Fila"]:hover{
+    cursor: url(cursor1.png),pointer;
+}
+select:hover{
+    cursor: url(cursor1.png),pointer;
+}
+#BotonPonerFicha:hover{
+    color:red
+}
+#Ganador1{
+    text-transform: capitalize;
+    text-align: center;
+    background-image: url("GanadorIMG.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 350%;
+}
+#Perdedor2{
+    text-transform: capitalize;
+    text-align: center;
+    background-image: url("perdedor.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#Ganador1,#Perdedor2{
+    overflow-x:hidden;
+     overflow-y:hidden;
+    font-family: Familia2;
+    font-size: 50px;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim{
+        0% {color: #ff0;} /*Amarillo*/
+       25% {color: #f80;} /*Naranja*/
+       50% {color: #000;} /*Negro*/
+       75% {color: #f80;} /*Otra vez naranja*/
+      100% {color: #ff0;} /*Otra vez amarillo*/
+    }
+#CasillaLlena{
+    color: white;
+    font-family: Familia1;
+}
+
