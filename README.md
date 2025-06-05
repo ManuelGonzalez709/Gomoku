@@ -65,4 +65,4 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](
 
 ---
 
-**Hecho con pasión por [ManuelGonzalez709](https://github.com/ManuelGonzalez709) y colaboradores. ¡Diviértete jugando Gomoku!**
+**Hecho con pasión por [ManuelGonzalez709](https://github.com/ManuelGonzalez709). ¡Diviértete jugando Gomoku!**
